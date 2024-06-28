@@ -15,7 +15,7 @@ header {
     color: #fff;
     padding: 1rem;
     text-align: center;
-    width: 1170px;
+    width: 1381px;
 }
 
 nav ul {
@@ -100,7 +100,7 @@ footer {
     align-items:center; 
     padding: 100px;
     border: 50px solid palevioletred;
-    width: 1170px;
+    width: 1381px;
 }
 
 .flex-item {
@@ -113,12 +113,8 @@ footer {
  
 }
 
-@media screen and (max-width: 1151px) {
-    main.flex-container {
-        display: flex;
-    }
-
-    section.flex-item {
+@media screen and (min-width: 1165px) {
+    .flex-container {
         display: flex;
     }
 }
