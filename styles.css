@@ -15,6 +15,7 @@ header {
     color: #fff;
     padding: 1rem;
     text-align: center;
+    width: 1170px;
 }
 
 nav ul {
@@ -66,18 +67,18 @@ nav ul li a:hover {
     background-color: #0056b3;
 }
 
-/* Sections */
-section {
-    padding: 4rem 0;
+
+div {
+    padding: 1rem 0;
     text-align: center;
 }
 
-section h2 {
+div h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-section p {
+ p {
     font-size: 1.1rem;
 }
 
@@ -93,36 +94,31 @@ footer {
 }
 
 
-@media (max-width: 768px) {
-    header {
-        padding: 0.5rem;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .btn {
-        padding: 0.5rem 1.5rem;
-        font-size: 0.9rem;
-    }
-}
-
-main.flex-container {
+.flex-container {
     display: flex;
     flex-wrap: wrap; 
-    justify-content:center; 
+    align-items:center; 
     padding: 100px;
     border: 50px solid palevioletred;
+    width: 1170px;
 }
 
-section.flex-item {
+.flex-item {
      
     padding: 10px;
     margin: 10px;
-    width: 30%; 
+    width: 1000px; 
+    align-items: center;
+
+ 
+}
+
+@media screen and (max-width: 1151px) {
+    main.flex-container {
+        display: flex;
+    }
+
+    section.flex-item {
+        display: flex;
+    }
 }
